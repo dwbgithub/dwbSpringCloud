@@ -1,5 +1,5 @@
 server:
-  port: 8050
+  port: 8761
 eureka:
   instance:
     #注册到eurekaip地址(注册中心IP)
@@ -22,3 +22,6 @@ spring:
           uri: ttps://github.com/dwbgithub/dwbSpringCloud.git
           username: dwbgithub
           password: dwbgithubmima1234
+  freemarker:
+    template-loader-path: classpath:/templates/
+    prefer-file-system-access: false
