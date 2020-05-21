@@ -14,10 +14,4 @@ public class ConfigClientEurekaApplication {
   public static void main(String[] args) {
     SpringApplication.run(ConfigClientEurekaApplication.class, args);
   }
-  @Value("${foo}")
-  String foo;
-  @RequestMapping(value = "/hi")
-  public String hi(){
-      return foo;
-  }
 }

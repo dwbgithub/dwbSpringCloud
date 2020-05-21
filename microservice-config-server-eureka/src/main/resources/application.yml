@@ -1,5 +1,17 @@
 server:
   port: 8050
+eureka:
+  instance:
+    #注册到eurekaip地址(注册中心IP)
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    #表示是否需要将自己注册到Eureka Server上(默认为true),本次位单机部署,不需要设置为true;但是注册中心集群时候必须为true;因为集群时,需要提供本Eureka Server可发现性;(即是否注册自己的开关)
+    register-with-eureka: false
+    #表示是否从Eureka Server获取注册信息(默认为true);这是一个单点的 Eureka Server，不需要同步其他节点的数据，可以设为false
+    fetch-registry: false
 spring:
   application:
     name: microservice-config-server-eureka
@@ -7,13 +19,9 @@ spring:
     config:
       server:
         git:
-          #uri: https://github.com/eacdy/spring-cloud-study/
-          #search-paths: config-repo
-          uri: https://github.com/eacdy/forezp/SpringcloudConfig/
-          search-paths: respo
-          username: 
-          password: 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+          uri: https://gitee.com/dwb_2020/springcloud.git
+          username: 15902166134
+          password: 1q2w3e$r
+security:
+  basic:
+    enabled: false
