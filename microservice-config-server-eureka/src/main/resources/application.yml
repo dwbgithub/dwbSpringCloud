@@ -1,9 +1,6 @@
 server:
-  port: 8761
+  port: 8050
 eureka:
-  instance:
-    #注册到eurekaip地址(注册中心IP)
-    hostname: localhost
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
@@ -22,6 +19,3 @@ spring:
           uri: ttps://github.com/dwbgithub/dwbSpringCloud.git
           username: dwbgithub
           password: dwbgithubmima1234
-  freemarker:
-    template-loader-path: classpath:/templates/
-    prefer-file-system-access: false
