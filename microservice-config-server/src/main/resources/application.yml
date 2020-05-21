@@ -1,5 +1,5 @@
 server:
-  port: 8098
+  port: 8888
 eureka:
   instance:
     #注册到eurekaip地址(注册中心IP)
