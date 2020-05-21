@@ -18,7 +18,6 @@ spring:
   cloud:
     config:
       server:
-#        bootstrap: false
         git:
           uri: ttps://github.com/dwbgithub/dwbSpringCloud.git
           username: dwbgithub
