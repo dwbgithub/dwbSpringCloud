@@ -19,9 +19,9 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/dwb_2020/springcloud.git
-          username: 15902166134
-          password: 1q2w3e$r
+          uri: ttps://github.com/dwbgithub/dwbSpringCloud.git
+          username: dwbgithub
+          password: dwbgithubmima1234
 security:
   basic:
     enabled: false
