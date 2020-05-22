@@ -16,6 +16,6 @@ spring:
     config:
       server:
         git:
-          uri: ttps://github.com/dwbgithub/dwbSpringCloud.git
+          uri: https://github.com/dwbgithub/dwbSpringCloud.git
           username: dwbgithub
           password: dwbgithubmima1234
