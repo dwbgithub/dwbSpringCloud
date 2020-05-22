@@ -1,9 +1,6 @@
 server:
-  port: 8888
+  port: 8088
 eureka:
-  instance:
-    #注册到eurekaip地址(注册中心IP)
-    hostname: 127.0.0.1
   client:
     serviceUrl:
             defaultZone: http://localhost:8761/eureka/
@@ -19,9 +16,6 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/dwb_2020/springcloud.git
-          username: 15902166134
-          password: 1q2w3e$r
-security:
-  basic:
-    enabled: false
+          uri: ttps://github.com/dwbgithub/dwbSpringCloud.git
+          username: dwbgithub
+          password: dwbgithubmima1234

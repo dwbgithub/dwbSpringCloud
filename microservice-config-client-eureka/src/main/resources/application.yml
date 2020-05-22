@@ -1,2 +1,12 @@
 server:
   port: 8051
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: microservice-config-client-eureka
+feign:
+  hystrix:
+    enabled: true
